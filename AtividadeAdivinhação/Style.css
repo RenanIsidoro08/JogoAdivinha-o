@@ -1,0 +1,59 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+#Menu {
+    text-align: center;
+}
+
+#nomeBotaoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#caixaP, #paginaJogo, #resultadoPagina {
+    background-color: #bbbbbb; 
+    padding: 20px; 
+    border-radius: 10px;
+    text-align: center; /* Adiciona centralização de texto */
+}
+
+#inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+}      
+
+h1 {
+    background: linear-gradient(100deg, #05b1b1, #ff00c3 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da adivinhação</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div id="Menu">
+    <div id="nomeBotaoContainer">
+        <div id="caixaP">
+            <h1>Bem vindo ao jogo da Adivinhação!</h1>
+            <form id="Informacoes">
+                <label for="nome">Digite seu nome :</label>
+                <input type="text" id="nomeID" required>
+            </form>
+    
+            <button type="button" id="jogarBotao">Jogar</button>
+        </div>
+    </div>
+</div>
+
+<div id="paginaJogo" style="display: none;">
+    <div id="inputContainer">
+        <h1 id="bemvindoID">Bem vindo ao jogo da Adivinhação!</h1>
+    
+        <p>Adivinhe um numero entre 1 e <span id="numeroMaximo"></span>:</p>
+        <input type="number" id="NumAle" min="1" max="10" required>
+        <button id="enviarPalpite">Enviar</button>
+        <p id="feedback"></p>
+    </div>
+    <button id="JogarNovaJogoID" style="display: none;">Jogar Novamente</button>
+</div>
+
+<div id="resultadoPagina" style="display: none;">
+    <div id="inputContainer"> <!-- Adicionado container -->
+        <h1 id="resultadoMensagemID"></h1>
+        <p id="pontosID"></p>
+        <p id="tentativasID"></p>
+        <button id="JogarNovaResultadoID">Jogar Novamente</button>
+    </div>
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
